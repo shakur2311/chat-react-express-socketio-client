@@ -1,6 +1,6 @@
 import { useState} from 'react';
 import io from 'socket.io-client';
-const socket = io('http://localhost:8005');
+const socket = io('chat-react-express-socketio-server.vercel.app');
 
 const ChatInterface = ({nombre})=>{
     const [mensaje,setMensaje] = useState([]);
